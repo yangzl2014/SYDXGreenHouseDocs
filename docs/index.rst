@@ -16,13 +16,12 @@ Skids 参考
 
 .. toctree::
    :maxdepth: 1
-   
+
+   SensorNetwork/index.rst
    android/index.rst
    server/index.rst
-   trailbreaker/index.rst
-   
------------------
 
+-----------------
 
 
 许可信息
@@ -35,6 +34,7 @@ Skids 参考
 
 -----------------
 
+
 术语表
 -----------------
 
@@ -43,6 +43,7 @@ Skids 参考
 
    reference/glossary.rst
 
+   
 索引
 ==================
 

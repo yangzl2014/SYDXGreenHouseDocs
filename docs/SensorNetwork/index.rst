@@ -1,11 +1,11 @@
-.. _quickref-index:
+.. _index:
 
-Skids的快速参考
+传感网络搭建
 ------------------------------------
 
 .. toctree::
    :maxdepth: 2
    :numbered:
 
-   snake.rst
+   introduction.rst
 
