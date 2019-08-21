@@ -17,7 +17,7 @@ Skids 参考
 .. toctree::
    :maxdepth: 1
 
-   SensorNetwork/index.rst
+   IGbox/index.rst
    android/index.rst
    server/index.rst
 
