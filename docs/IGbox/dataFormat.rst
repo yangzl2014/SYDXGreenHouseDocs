@@ -116,7 +116,7 @@ MQTT主题数据格式
 
 (3) "/intelligence_agriculture/sendData"主题，gateway发送传感数据的主题，数据格式为：
 
-.. image:: img/mqtt1.png
+.. image:: img/mqtt1.PNG
 
 例如：
 ::
@@ -124,7 +124,7 @@ MQTT主题数据格式
 
 (4) "/intelligence_agriculture/sendControlData"主题，gateway接收控制数据的主题，数据格式为：
 
-.. image:: img/mqtt2.png
+.. image:: img/mqtt2.PNG
 
 例如：
 ::

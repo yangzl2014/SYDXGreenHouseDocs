@@ -6,8 +6,8 @@ ZigBee固件烧写
 固件介绍
 -----------------------
 
-  + PAN_Coordinator_JN5169.bin：ZigBee Coordinator固件，烧写在Skids的ZigBee上
-  + TB_EndDevice_JN5169.bin：ZigBee EndDevice固件，烧写在ZigBee模块的ZigBee上
+  + PAN_Coordinator_JN5169.bin：ZigBee Coordinator固件，烧写在Skids的ZigBee上。
+  + TB_EndDevice_JN5169.bin：ZigBee EndDevice固件，烧写在ZigBee模块的ZigBee上。
 
 
 烧写工具

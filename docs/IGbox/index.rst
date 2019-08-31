@@ -11,5 +11,4 @@
    zigbeeBurn.rst
    mqtt.rst
    dataFormat.rst
-   mqtt.rst
 
