@@ -8,7 +8,7 @@ AT指令格式
 
 AT指令是ZigBee之间的通信数据格式
 
-.. image:: img/atFormat.jpg
+.. image:: img/atFormat.png
 
 (1) 发给ZigBee EndDevice的UART的AT指令的格式
   + 长度字段有2个字节，高位在前低位在后，16进制表示，其值为具体数据字段的长度
