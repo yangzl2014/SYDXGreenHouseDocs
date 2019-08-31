@@ -8,4 +8,8 @@
    :numbered:
 
    introduction.rst
+   zigbeeBurn.rst
+   mqtt.rst
+   dataFormat.rst
+   mqtt.rst
 

@@ -95,16 +95,16 @@ AT指令是ZigBee之间的通信数据格式
 (2) 数据形式采用json格式，字典中的键和值都是字符串
 
 (3) 传感数据主要有3部分组成：uniqueId、type、sensorData
-  + uniqueId：设备的ID号，由5个字符组成，前2个是设备名称缩写，第3个是设备类型号与type相同，后两个是设备编号从1-99（例如："BH301"）
-  + type：设备类型号，1代表温湿度设备，3代表光照强度设备，7代表血氧设备
-  + sensorData：对应具体传感数据的值，sensorData要替换为具体的键：'light'代表光照强度，'air_humidity'代表湿度，'air_temperature'代表温度，'pulse_rate'代表脉率，'blood_oxygen'代表血氧
-  + 例如一光照传感数据为：{"uniqueId":"BH301", "type":"3", "light":"65.21"}
+  + uniqueId('uid')：设备的ID号，由5个字符组成，前2个是设备名称缩写，第3个是设备类型号与type相同，后两个是设备编号从1-99（例如："BH301"）
+  + type('typ')：设备类型号，1代表温湿度设备，3代表光照强度设备，7代表血氧设备
+  + sensorData(替换为具体的键)：对应具体传感数据的值，'ill'代表光照强度，'hum'代表空气湿度，'tem'代表空气温度，'moi'代表土壤湿度，'co2'代表二氧化碳浓度
+  + 例如一光照传感数据为：{"uid":"BH301", "typ":"3", "ill":"65.21"}
 
 (4) 控制数据主要有3部分组成：uniqueId、type、operation
-  + uniqueId：设备的ID号
-  + type：设备类型号
-  + operation：要执行的操作，一般为"open"或"close"
-  + 例如一控制数据为：{"uniqueId":"MT001", "type":"0", "operation":"open"}
+  + uniqueId('uid')：设备的ID号
+  + type('typ')：设备类型号
+  + operation('ope')：要执行的操作，一般为"open"或"close"
+  + 例如一控制数据为：{"uid":"MT001", "typ":"0", "ope":"open"}
 
 
 MQTT主题数据格式
@@ -114,18 +114,18 @@ MQTT主题数据格式
 
 (2) 数据形式采用json格式，字典中的键和值都是字符串
 
-(3) "/ruidao/sendData"主题，gateway发送传感数据的主题，数据格式为：
+(3) "/intelligence_agriculture/sendData"主题，gateway发送传感数据的主题，数据格式为：
 
 .. image:: img/mqtt1.png
 
 例如：
 ::
-	{"head":{"uniqueId":"BH301", "env":"edu_ruidao", "action":"sendMonitorData"},"body":{"type":"3", "light":"56.21"}}
+    {"head":{"uniqueId":"BH301", "env":"agrct_syedu", "action":"sendMonitorData"},"body":{"type":"3", "light":"56.21"}}
 
-(4) "/ruidao/sendControlData"主题，gateway接收控制数据的主题，数据格式为：
+(4) "/intelligence_agriculture/sendControlData"主题，gateway接收控制数据的主题，数据格式为：
 
 .. image:: img/mqtt2.png
 
 例如：
 ::
-	{"head":{"uniqueId":"MT001", "env":"edu_ruidao", "action":"sendControlData"},"body":{"operation":"open"}}
+    {"head":{"uniqueId":"MT001", "env":"agrct_syedu", "action":"sendControlData"},"body":{"operation":"open"}}
