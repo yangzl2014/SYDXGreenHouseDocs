@@ -19,7 +19,6 @@ Skids 参考
 
    IGbox/index.rst
    android/index.rst
-   server/index.rst
 
 -----------------
 
